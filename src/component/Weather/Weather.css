@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;500&display=swap');
+
+
+.All {
+
+    border-radius: .4rem;
+    padding: 25px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.All.light {
+    background-color: rgb(240, 135, 22);
+    border: 1px solid rgb(217, 122, 20);
+}
+
+.All.dark {
+    background-color: rgb(66, 63, 63);
+    border: 1px solid rgb(84, 80, 80);
+    color: #fff;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-bar {
+    border: 2px groove black;
+    width: 20rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    caret-color: red;
+}
+
+.button {
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 8rem;
+}
+
+.button.light {
+    background: linear-gradient(0deg, rgba(153, 66, 3, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border: 1px solid rgb(238, 180, 72);
+}
+
+.button.dark {
+    background-color: rgb(25, 24, 24);
+    border: 1px solid rgb(25, 24, 24);
+    color: #fff;
+
+}
+.button.dark:hover{
+   font-weight: 600;
+   background-color:rgb(102, 101, 135) ;
+   color: rgb(37, 37, 37);
+}
+
+.button.light:hover{
+    font-weight: 600;
+ }
+
+
+p {
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+
+
+input:focus.light {
+    box-shadow: 0 0 10px rgb(255, 204, 2), 0 0 20px rgb(255, 204, 2), 0 0 40px rgb(255, 204, 2), 0 0 60px rgb(255, 204, 2);
+}
+
+
+input:focus.dark {
+    box-shadow: 0 0 10px rgb(234, 219, 162), 0 0 20px rgb(234, 219, 162), 0 0 40px rgb(234, 219, 162), 0 0 60px rgb(234, 219, 162);
+}
+
+.effect {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+
+.location,
+.date,
+.temp,
+.weather-type,
+.wind,
+.humidity {
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: .5rem;
+    grid-column: span 2;
+}
+
+.location.light:hover,
+.date.light:hover,
+.temp.light:hover,
+.weather-type.light:hover,
+.wind.light:hover,
+.humidity.light:hover {
+    background-color: rgb(240, 151, 42);
+}
+
+.location.dark:hover,
+.date.dark:hover,
+.temp.dark:hover,
+.weather-type.dark:hover,
+.wind.dark:hover,
+.humidity.dark:hover {
+    background-color: rgb(118, 117, 116);
+}
+
+.location.light,
+.date.light,
+.temp.light,
+.weather-type.light,
+.wind.light,
+.humidity.light {
+
+    color: black;
+    border: 1px solid black;
+
+}
+
+
+.location.dark,
+.date.dark,
+.temp.dark,
+.weather-type.dark,
+.wind.dark,
+.humidity.dark {
+
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+
+
+/* .date{
+    font-size: medium;
+    /* font-family: 'Ubuntu Condensed', sans-serif;
+} */
